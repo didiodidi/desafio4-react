@@ -1,6 +1,6 @@
 
 import "./NavBar.css";
-import CustomizedBadges from './CartWidget'
+import CartWidget from './CartWidget'
 
 
 
@@ -15,7 +15,7 @@ const NavBar = () => {
                 <li><a href="#?">Contacto </a></li>
                 <li><a href="#?">Sobre nostros</a></li>
                 <li><a href="#?">Galeria</a></li>
-                <CustomizedBadges/>
+                <CartWidget/> 
                 
             </ul>
            </div>

@@ -1,13 +1,14 @@
-import React,{Component} from "react";
+import React from "react";
 import "./style.css";
-import ItemCount from "./components/ItemsCount";
+
 
 //Components
 import NavBar from "./components/NavBar";
 import ItemListContainer from "./components/ItemListContainer";
+// import ItemCount from "./components/ItemsCount";
+import ItemCounter from "./components/ItemCounter"
+const App =() => {
 
-class App extends Component {
-  render() {
     return(
       <div>
         <NavBar />
@@ -16,7 +17,7 @@ class App extends Component {
             <ItemListContainer text="Bienvenidos"/>
             <ItemListContainer text2="Este sitio se encuentra en construcción....."/>
             <div>
-              <ItemCount/>
+              <ItemCounter stock={10} initial={1} onAdd = {(cantidadDeProductos) => console.log(`cantidadDeProductos: ${cantidadDeProductos}`)} />
             </div>
           </div>
           
@@ -24,6 +25,5 @@ class App extends Component {
       </div>
     )
   }
-}
 
 export default App;

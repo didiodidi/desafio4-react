@@ -1,19 +1,19 @@
-import { useState } from "react";
+import {useState} from "react";
 
 const ItemCount = () =>{
 
-    const [Count, setCount] = useState(1);
+    const [count, setCount] = useState(1);
     const increment = ()=> {
-    if(Count < 10) {
-        setCount(Count + 1)
+    if(count < 10) {
+        setCount(count + 1)
     }else{
         alert("Limite de Items Alcanzados")
         console.log('Limite Alcanzado')
     }
 }
 const decrement = () =>{
-    if (Count > 0) {
-        setCount(Count - 1)
+    if (count > 0) {
+        setCount(count - 1)
     }else{
         alert("No puedes tener menos de 0 items")
         console.log("Limite negativo alcanzado")
@@ -22,7 +22,7 @@ const decrement = () =>{
 
 return (
     <>
-        <p>Items {Count}</p>
+        <p>Items {count}</p>
         <button onClick = {decrement} > - </button>
         <button onClick =  {increment} > + </button>
     </>
