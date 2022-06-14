@@ -1,11 +1,11 @@
 import React from "react";
-import "./style.css";
+import "./hojas-de-estilo/style.css";
 
 
 //Components
 import NavBar from "./components/NavBar";
 import ItemListContainer from "./components/ItemListContainer";
-// import ItemCount from "./components/ItemsCount";
+
 import ItemCounter from "./components/ItemCounter"
 const App =() => {
 

@@ -1,4 +1,4 @@
-import "./NavBar.css"
+import "../hojas-de-estilo/NavBar.css"
 
 const ItemListContainer = (props) => {
 	console.log(props);
